@@ -1,3 +1,5 @@
+/*Print an array in Pendulum Arrangement
+this one is a temp solution*/
 import java.util.*;
 import java.io.*;
 class H1{
