@@ -15,22 +15,23 @@ for(int i=0;i<n;i++){
 arr[i]= Integer.parseInt(str[i]);
 }
  int min = arr[0];
-	       int index=0;
+	       int ind=0;
 
-	       for(int i = 0; i < n; i++)
+	       for(int m = 0; m < n; m++)
 	       {
-	            if(min > arr[i])
+	            if(min > arr[m])
 	            {
-	                min = arr[i];
-	                index=i;
+	                min = arr[m];
+	                ind=m;
 	            }
 	        }
 
+
 if(n%2!=0){
 temp=arr[n/2];
-arr[n/2]=arr[n-1];
-arr[n-1]=temp;
-/*for(int i=0;i<n;i++){
+arr[n/2]=arr[ind];
+arr[ind]=temp;
+/* for(int i=0;i<n;i++){
 System.out.print(arr[i]);
 } 
  System.out.print("\n"); */
@@ -46,7 +47,7 @@ arr[j]=temp;
 for(int i=0;i<n/2;i++){
 System.out.print(arr[i]+" ");
 }
-
+System.out.print(arr[n/2]+" ");
 for(int i=(n/2)+1;i<n;i++){
 for(int j=i+1;j<n;j++){
 if(arr[i]<arr[j]){
@@ -56,14 +57,14 @@ arr[j]=temp;
 }
 }
 }
-for(int i=(n/2)+1;i<0;i++){
+for(int i=(n/2)+1;i<n;i++){
 System.out.print(arr[i]+" ");
 }
 }
 else if(n%2==0){
 temp=arr[(n-1)/2];
-arr[(n-1)/2]=arr[n-1];
-arr[n-1]=temp;
+arr[(n-1)/2]=arr[ind];
+arr[ind]=temp;
 /*for(int i=0;i<n;i++){
 System.out.print(arr[i]);
 } */
@@ -80,7 +81,7 @@ arr[j]=temp;
 for(int i=0;i<(n-1)/2;i++){
 System.out.print(arr[i]+" ");
 }
-
+System.out.print(arr[(n-1)/2]+" ");
 for(int i=((n-1)/2)+1;i<n;i++){
 for(int j=i+1;j<n;j++){
 if(arr[i]<arr[j]){
@@ -90,11 +91,11 @@ arr[j]=temp;
 }
 }
 }
-for(int i=((n-1)/2)+1;i<0;i++){
+for(int i=((n-1)/2)+1;i<n;i++){
 System.out.print(arr[i]+" ");
 } 
 }
-
+System.out.print("\n");
 
 
 
