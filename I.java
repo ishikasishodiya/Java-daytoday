@@ -1,3 +1,4 @@
+/*closest number*/
 import java.util.*;
 import java.io.*;
 class I{
@@ -19,8 +20,6 @@ for(int i=0;i<n;i++)
     arr[i]=Integer.parseInt(s12[i]);
  
 }
-
- 
 int a=0;
 int cdis=Math.abs(arr[0]-d);
 for(int i=0;i<n;i++){
