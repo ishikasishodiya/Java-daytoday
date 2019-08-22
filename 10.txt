@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+int a,b,pro;
+printf("enter first number");
+scanf("%d", &a);
+printf("enter the second number");
+scanf("%d" , &b);
+pro= a*b;
+printf("the sum is %d", pro);
+return 0;
+}
