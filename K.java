@@ -26,7 +26,7 @@ if(dis<=cdis)
 cdis=dis;
 }
 }
-System.out.println(dis);
+System.out.println(cdis);
 
 }
 }
