@@ -18,7 +18,7 @@ m= Integer.parseInt(br.readLine());
 Arrays.sort(arr);
 int cdis=100000;
 int dis=0;
-for(int i=0;i<n-m;i++){
+for(int i=0;i<=n-m;i++){
  dis = Math.abs(arr[i]-arr[i+m-1]);
 System.out.println(dis);
 if(dis<=cdis)
