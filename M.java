@@ -15,14 +15,21 @@ int a=0;
 for(int i=0;i<sb1.length();i++){
 for(int j=0;j<sb2.length();j++){
 if(sb1.charAt(i)== sb2.charAt(j)){
-char x=sb1.charAt(i);
-char y=sb2.charAt(i);
+String x = Character.toString(sb1.charAt(i));
+String y = Character.toString(sb2.charAt(j));
+  
+  //char x=sb1.charAt(i);
+//char y=sb2.charAt(i);
 int x1=sb1.indexOf(x,i);
 int y1=sb2.indexOf(y,j);
+if(x1>-1){
+sb1.deleteCharAt(x1);
+}
+if(y1>-1){
+sb2.deleteCharAt(y1);
+}
 sb1.deleteCharAt(i);
 sb2.deleteCharAt(j);
-sb1.deleteCharAt(x);
-sb2.deleteCharAt(y);
 
 }
 }
