@@ -23,10 +23,10 @@ String y = Character.toString(sb2.charAt(j));
 int x1=sb1.indexOf(x,i);
 int y1=sb2.indexOf(y,j);
 if(x1>-1){
-sb1.deleteCharAt(x1);
+sb1.deleteCharAt(x1+i);
 }
 if(y1>-1){
-sb2.deleteCharAt(y1);
+sb2.deleteCharAt(y1+j);
 }
 sb1.deleteCharAt(i);
 sb2.deleteCharAt(j);
