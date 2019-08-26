@@ -1,3 +1,4 @@
+// all permutation of string
 public class N {
 
     public static void main(String[] args) throws Exception {
