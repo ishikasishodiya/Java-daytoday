@@ -13,7 +13,7 @@ Constraints:
 1 = A[i] = 1000
 
 Example:
-Input
+Inp
 1
 5
 1 2 3 4 5
