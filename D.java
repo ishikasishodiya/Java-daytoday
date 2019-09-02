@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 class D{
 public static void main(String[] args){
-int t, n;
+int t, d, n;
 BufferedReader inp = new BufferedReader (new InputStreamReader(System.in));
 
 t=Integer.parseInt(inp.readLine());
