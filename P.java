@@ -30,15 +30,16 @@ a=i;
 }
 
 System.out.println(a);
-int b;
-for(int i=a;i<n;i++){
+int b,c;
+for(int i=a+1;i<n;i++){
 if(arr[a]>arr[i]){
 b= arr[a];
 System.out.print(b+" ");
 }
-else{
-b= arr[i];
-System.out.print(b+" ");
+else if(arr[a]<arr[i]){
+c= arr[i];
+arr[a]=arr[i];
+System.out.print(c+" ");
 }}
 
 System.out.print("\n");
