@@ -20,7 +20,7 @@ for(int i=0;i<n;i++)
 int max; int a=0; int b=0;
 max=arr[0];
 for(int i=0;i<n;i++){
-for(int j=i;j<d+i && j<n;j++){
+for(int j=i;j<d+i && j<n-d+1;j++){
 if(arr[j]>max){
 max = arr[j];
 
