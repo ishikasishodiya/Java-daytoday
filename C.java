@@ -1,4 +1,4 @@
-/*Given an unsorted array arr[] of size N, rotate it by D elements (clockwise). 
+/*Given an unsorted array arr[] of size N, rotate it b D elements (clockwise). 
 
 Input:
 The first line of the input contains T denoting the number of testcases. First line of eacg test case contains two space separated elements, N denoting the size of the array and an integer D denoting the number size of the rotation. Subsequent line will be the N space separated array elements.
