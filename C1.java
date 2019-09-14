@@ -1,5 +1,5 @@
 import java.util.*;
-import java.io.*;  // ye imp hai in bufferreader
+import java.io.*;  // ye imp hai in bufferreader...
 class C1
  {
 public static void main (String[] args) throws Exception
