@@ -17,6 +17,10 @@ for(int i=0;i<n;i++){
 arr[i]= Integer.parseInt(b1[i]);
 }
 
+for(int i=0;i<n;i++){
+int start= i;
+sum=sum+arr[i];
+if(sum>d)
 
 
 
