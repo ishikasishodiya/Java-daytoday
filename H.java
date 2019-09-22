@@ -1,5 +1,5 @@
 /*Print an array in Pendulum Arrangement
-this one is a temp solution*/
+this one is a temp solutn*/
 
 import java.util.*;
 import java.io.*;
