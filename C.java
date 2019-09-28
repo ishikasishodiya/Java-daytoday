@@ -10,8 +10,7 @@ Constraints:
 1 <= T <= 200
 1 <= N <= 107
 1 <= D <= N
-0 <= arr[i] <= 105
-
+0 <= arr[i] <= 10
 Example:
 Input:
 2
