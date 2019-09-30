@@ -16,18 +16,22 @@ int arr[] = new int[n];
 for(int i=0;i<n;i++){
 arr[i]= Integer.parseInt(s3[i]);
 }
-int number,diff;
+int number,diff=0;
 int count=0;
 int count2=0;
+int num;
 for(int i=0;i<n;i++){
 if(arr[i]<d){
+num =arr[i];
+System.out.println(num);
 n= arr[i];
-
-        while (n != 0) { 
-            n = n / 10; 
-            ++count; 
-        } 
 number= arr[i];
+while (n != 0) { 
+n = n / 10; 
+count++; 
+} 
+//if(count>1){
+
 int arr2[] = new int[count];
 for(int j=0;j<count;j++){
 while(number>0){
@@ -38,18 +42,16 @@ break;
 }
 
 for(int j=0;j<count;j++){
- if(j == count-1){
-                diff = Math.abs(arr2[j] - arr2[0]);
-            } else {
-                diff = Math.abs(arr2[j] - arr2[j+1]); // Mistake. Can be
-                                                        // bigger than array
-            }
+if(j != count-1){
+                diff = Math.abs(arr2[j] - arr2[j+1]);
+            } 
+            
 if(diff==1)
 count2++;
+
+}
 if(count2==count-1)
 System.out.print(arr[i]+" ");
-}
-
 arr2=null;
 }
 }
