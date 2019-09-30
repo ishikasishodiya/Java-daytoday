@@ -41,10 +41,8 @@ break;
 }
 }
 
-for(int j=0;j<count;j++){
-if(j != count-1){
-                diff = Math.abs(arr2[j] - arr2[j+1]);
-            } 
+for(int j=0;j<count-1;j++){
+diff = Math.abs(arr2[j] - arr2[j+1]);
             
 if(diff==1)
 count2++;
@@ -52,7 +50,7 @@ count2++;
 }
 if(count2==count-1)
 System.out.print(arr[i]+" ");
-arr2=null;
+//arr2=null;
 }
 }
 System.out.print("\n");
