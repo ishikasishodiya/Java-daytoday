@@ -50,7 +50,7 @@ count2++;
 }
 if(count2==count-1)
 System.out.print(arr[i]+" ");
-//arr2=null;
+arr2=null;
 }
 }
 System.out.print("\n");
